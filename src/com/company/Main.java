@@ -13,8 +13,16 @@ public class Main {
             System.out.println('*');
         }
     }
+
+    private static void printRightTriangle(int n) {
+        for(int i=1; i<=n; i++) {
+            printAsteriskInHorizonLine(i);
+        }
+    }
+
     public static void main(String[] args) {
         printAsteriskInHorizonLine(8);
         printAsteriskInVerticalLine(3);
+        printRightTriangle(3);
     }
 }
